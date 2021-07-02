@@ -1,14 +1,17 @@
 body{
-	background-color: hsl(0, 0%, 98%);
+	background: url("../images/Port2.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
 
 h1,h2,h3,h4,h5,h6{
-	color:hsl(0, 0%, 30%);
+	color:#01577a;
 }
 
 .box-element{
-	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
-	background-color: #fff;
+	box-shadow:hsl(0, 0%, 70%) 0 0 16px;
+	background-color: hsl(0, 0%, 90%);
 	border-radius: 4px;
 	padding: 10px;
 }
@@ -25,8 +28,9 @@ h1,h2,h3,h4,h5,h6{
 	border-radius: 0 0 4px 4px;
 }
 
+
 .bg-dark{
-	background-color: #4f868c!important;
+	background-color: #000000!important;
 }
 
 #cart-icon{
@@ -53,6 +57,7 @@ h1,h2,h3,h4,h5,h6{
 .btn{
 	border-radius: 0;
 }
+
 
 .row-image{
 	width: 100px;
@@ -97,3 +102,83 @@ h1,h2,h3,h4,h5,h6{
 .hidden{
 	display: none!important;
 }
+
+footer{
+	background-color: black;
+	position: fixed;
+    height: 30px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+/*-----Main image------*/
+
+
+@keyframes move-background {
+	from {
+	  -webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+	  -webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+  }
+  @-webkit-keyframes move-background {
+	from {
+	  -webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+	  -webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+  }
+  
+  @-moz-keyframes move-background {    
+	from {
+	  -webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+	  -webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+  }
+  
+	  @-webkit-keyframes move-background {
+	from {
+	  -webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to { 
+	  -webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+  }
+
+  .background-container{
+	position: fixed;
+	top: 9%;
+	left:0;
+	bottom: 0;
+	right: 0;
+  }
+  
+  .center-fit {
+	max-width: 100%;
+	max-height: 100vh;
+	margin: auto;
+}
+  
+  .clouds{
+	width:10000px;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	  bottom: 0;
+	  z-index: 1;
+  
+	 -moz-animation:move-background 150s linear infinite;
+	-ms-animation:move-background 150s linear infinite;
+	-o-animation:move-background 150s linear infinite;
+	-webkit-animation:move-background 150s linear infinite;
+	animation:move-background 150s linear infinite;
+  }
