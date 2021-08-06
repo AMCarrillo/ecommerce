@@ -2,7 +2,7 @@
 {% load static %}
 <html>
 <head>
-	<title>L&M VAPOR</title>
+	<title>LYM VAPOR</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 
@@ -64,7 +64,7 @@
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	  <a class="navbar-brand" href="{% url 'main' %}">L&M VAPOR</a>
+	  <a class="navbar-brand" href="{% url 'main' %}">LYM VAPOR</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -77,7 +77,7 @@
 	 
 	    </ul>
 	    <div class="form-inline my-2 my-lg-0">
-	     	<a href="#"class="btn btn-outline-light" style="border-color:#01577a; background-color:#01577a;">Login</a>
+	     	<a href="#"class="btn btn-outline-light" style="border-color:#22c6bf; background-color:#22c6bf;">Login</a>
 	     	
 	     	<a href="{% url 'cart' %}">
 	    		<img  id="cart-icon" src="{% static 'images/cart.png' %}">
@@ -96,17 +96,29 @@
 				<div class="clouds"></div>
 			</div>
 
-            {% endblock content %}
-         </div>
+			<div class="container h-100">
+				<div class="row h-100 justify-content-center align-items-center">
+					<div class="center-box text-center">
+						<img class="thumbnail" src="{% static 'images/LYM main.png' %}">
+						<div class="box-element product">
+							<h6><strong>Welcome! In order to buy you must be +18.</strong></h6>
+							<hr>
+							<a class="btn btn-outline-light" style="border-color:#22c6bf; background-color:#22c6bf;" href="{% url 'store' %}">I'm +18</a>
+							<h4 style="display: inline-block; float: right"></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{% endblock %}
 <!-- Footer -->
     <footer class="footer text-faded text-center py-6">
       <div class="container">
-        	<a href="sample.html" class="link">Política de privacidad</a> ·
-        	<a href="sample.html" class="link">Aviso legal</a> ·
-        	<a href="sample.html" class="link">Cookies</a>
+        	<a href="sample.html" class="text-white bg-dark">Privacy Policy</a> ·
+        	<a href="sample.html" class="text-white bg-dark">Terms of Use</a> ·
+        	<a href="sample.html" class="text-white bg-dark">Cookies</a>
       </div>
 	</footer>
-
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
